@@ -55,6 +55,7 @@ while True:
             result_tan = math.tan(radian)
             result = f"sin({angle}) = {result_sin}, cos({angle}) = {result_cos}, tan({angle}) = {result_tan}"
 
+
         # Print the result
         if result is not None:
             print("Result: ", result)
@@ -62,3 +63,9 @@ while True:
 
     # Call the calculator function
     calculator()
+
+    # Ask if the user wants to continue
+    continue_choice = input("Do you want to perform another calculation? (yes/no): ").lower()
+    if continue_choice != 'yes':
+        print("Goodbye!")
+        break
